@@ -24,3 +24,7 @@ button.addEventListener("click", () => {
   errorMessage.textContent = ""; 
   
 });
+
+removeButton.addEventListener("click", () => {
+   li.remove();
+});
