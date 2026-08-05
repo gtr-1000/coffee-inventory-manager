@@ -1,9 +1,6 @@
 const input = document.getElementById("blend-input");
-
 const button = document.getElementById("add-btn");
-
 const list = document.getElementById("blend-list");
-
 const errorMessage = document.getElementById("error-message");
 
 button.addEventListener("click", () => {
@@ -14,20 +11,24 @@ button.addEventListener("click", () => {
   
   const blendName = input.value;
   const li = document.createElement("li");
+  
+ 
+  const span = document.createElement("span");
+  span.textContent = blendName; 
+  
   const removeButton = document.createElement("button");
   removeButton.textContent = "Remove";
-  li.textContent = blendName;
+  
+  
+  li.appendChild(span);
   li.appendChild(removeButton);
   list.appendChild(li);
 
   removeButton.addEventListener("click", () => {
-   li.remove();
-});
-
+     li.remove();
+  });
 
   input.value = ""; 
   errorMessage.textContent = ""; 
   input.focus();
-  
 });
-
