@@ -117,3 +117,25 @@ h1 {
 
     align-items: center;
 }
+
+#blend-list button {
+    border: none;
+
+    background: #dc2626;
+
+    color: white;
+
+    padding: 0.5rem 0.9rem;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-size: 0.85rem;
+
+    transition: 0.2s;
+}
+
+#blend-list button:hover {
+    transform: translateY(-1px);
+}
