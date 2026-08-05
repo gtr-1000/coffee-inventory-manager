@@ -20,11 +20,13 @@ button.addEventListener("click", () => {
   li.appendChild(removeButton);
   list.appendChild(li);
 
+  removeButton.addEventListener("click", () => {
+   li.remove();
+});
+
+
   input.value = ""; 
   errorMessage.textContent = ""; 
   
 });
 
-removeButton.addEventListener("click", () => {
-   li.remove();
-});
