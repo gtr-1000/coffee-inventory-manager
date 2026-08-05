@@ -14,7 +14,10 @@ button.addEventListener("click", () => {
   
   const blendName = input.value;
   const li = document.createElement("li");
+  const removeButton = document.createElement("button");
+  removeButton.textContent = "Remove";
   li.textContent = blendName;
+  li.appendChild(removeButton);
   list.appendChild(li);
 
   input.value = ""; 
