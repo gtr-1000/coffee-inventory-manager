@@ -27,6 +27,7 @@ button.addEventListener("click", () => {
 
   input.value = ""; 
   errorMessage.textContent = ""; 
+  input.focus();
   
 });
 
